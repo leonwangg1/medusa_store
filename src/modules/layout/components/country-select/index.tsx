@@ -82,7 +82,8 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
             )}
           </div>
         </Listbox.Button>
-        <div className="flex relative w-full min-w-[320px]">
+        {/* Hide popover ui , since only have Australia as country */}
+        {/* <div className="flex relative w-full min-w-[320px]">
           <Transition
             show={state}
             as={Fragment}
@@ -115,7 +116,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
               })}
             </Listbox.Options>
           </Transition>
-        </div>
+        </div> */}
       </Listbox>
     </div>
   )

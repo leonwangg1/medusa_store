@@ -76,15 +76,15 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                             regions={regions}
                           />
                         )}
-                        <ArrowRightMini
+                        {/* <ArrowRightMini
                           className={clx(
                             "transition-transform duration-150",
                             toggleState.state ? "-rotate-90" : ""
                           )}
-                        />
+                        /> */}
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
+                        © {new Date().getFullYear()} mimiblooms. All rights
                         reserved.
                       </Text>
                     </div>
