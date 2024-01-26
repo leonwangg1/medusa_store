@@ -38,9 +38,9 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M3 17h18M3 12h18M3 7h18"
                     />
                   </svg>
