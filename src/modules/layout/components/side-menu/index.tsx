@@ -30,32 +30,18 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                 <Popover.Button className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
                   {/* Menu */}
                   <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
                   >
                     <path
-                      d="M4.5 12H19.5"
+                      fill="none"
                       stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeMiterlimit="10"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M4.5 17.7692H19.5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeMiterlimit="10"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M4.5 6.23077H19.5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeMiterlimit="10"
-                      strokeLinecap="round"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 17h18M3 12h18M3 7h18"
                     />
                   </svg>
                 </Popover.Button>

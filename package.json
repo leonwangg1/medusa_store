@@ -36,6 +36,7 @@
     "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.8",
     "algoliasearch": "^4.20.0",
+    "keen-slider": "^6.8.6",
     "lodash": "^4.17.21",
     "medusa-react": "^9.0.0",
     "next": "^14.0.0",

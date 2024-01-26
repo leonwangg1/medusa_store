@@ -7,10 +7,11 @@ import Hero from "@modules/home/components/hero"
 import { getRegion } from "app/actions"
 import { ProductCollectionWithPreviews } from "types/global"
 
+//TODO: Update metadata
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "mimiblooms",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "A performant frontend ecommerce store built with Next.js 14 and Medusa.",
 }
 
 const getCollectionsWithProducts = async (

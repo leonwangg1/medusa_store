@@ -29,7 +29,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
         className,
         {
           // "aspect-[11/14]": isFeatured,
-          // "aspect-[/16]": !isFeatured && size !== "square",
+          "aspect-[9/16]": !isFeatured && size !== "square",
           "aspect-[1/1]": isFeatured || size === "square",
           "w-[180px]": size === "small",
           "w-[290px]": size === "medium",
