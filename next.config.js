@@ -26,10 +26,7 @@ const nextConfig = withStoreConfig({
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
     ],
-    domains: [
-      "https://mimiblooms-backend-c8a52735e2f5.herokuapp.com",
-      "https://res.cloudinary.com/ddedfwsge",
-    ],
+    domains: ["https://mimiblooms-backend-c8a52735e2f5.herokuapp.com"],
   },
 })
 
