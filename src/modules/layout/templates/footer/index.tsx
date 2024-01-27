@@ -3,7 +3,7 @@ import { Text, clx } from "@medusajs/ui"
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import MedusaCTA from "../../components/medusa-cta"
+// import MedusaCTA from "../../components/medusa-cta"
 
 import Image from "next/image"
 import footerLogo from "../../../../../public/footer-logo.png"
@@ -163,7 +163,7 @@ export default async function Footer() {
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} mimiblooms. All rights reserved.
           </Text>
-          <MedusaCTA />
+          {/* <MedusaCTA /> */}
         </div>
       </div>
     </footer>
