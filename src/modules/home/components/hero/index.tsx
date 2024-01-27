@@ -76,12 +76,14 @@ const Hero = () => {
                   alt="cover"
                   layout="fill"
                   objectFit="cover"
+                  placeholder="empty"
+                  priority={true}
                 />
               </picture>
             </Link>
           </div>
           <div className="keen-slider__slide">
-            <Link href="/store">
+            <Link href="/products/totoro">
               <picture>
                 <source media="(max-width: 768px)" srcSet={coverMobile2.src} />
                 <Image
@@ -89,17 +91,21 @@ const Hero = () => {
                   alt="cover"
                   layout="fill"
                   objectFit="cover"
+                  placeholder="empty"
+                  priority={true}
                 />
               </picture>
             </Link>
           </div>
           <div className="keen-slider__slide">
-            <Link href="/store">
+            <Link href="/collections/sanrioset">
               <picture>
                 <source media="(max-width: 768px)" srcSet={coverMobile3.src} />
                 <Image
                   src={cover3} // Default image
                   alt="cover"
+                  placeholder="empty"
+                  priority={true}
                 />
               </picture>
             </Link>
