@@ -109,6 +109,7 @@ const Hero = () => {
           {loaded && instanceRef.current && (
             <div className="dots">
               {[
+                // @ts-ignore
                 ...Array(
                   instanceRef.current.track.details.slides.length
                 ).keys(),
