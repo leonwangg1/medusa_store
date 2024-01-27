@@ -50,16 +50,16 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
               <Transition
                 show={open}
                 as={Fragment}
-                enter="transition ease-out duration-150"
+                enter="transition ease-out duration-50"
                 enterFrom="opacity-0"
-                enterTo="opacity-100 backdrop-blur-2xl"
-                leave="transition ease-in duration-150"
-                leaveFrom="opacity-100 backdrop-blur-2xl"
+                enterTo="opacity-100"
+                leave="transition ease-in duration-50"
+                leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Popover.Panel className="flex flex-col absolute w-full pr-4 sm:pr-0 sm:w-1/3 2xl:w-1/4 sm:min-w-min h-[calc(100vh-1rem)] z-30 inset-x-0 text-sm text-ui-fg-on-color m-2 backdrop-blur-2xl">
-                  <div className="flex flex-col h-full bg-[rgba(3,7,18,0.5)] rounded-rounded justify-between p-6">
-                    <div className="flex justify-end" id="xmark">
+                <Popover.Panel className="flex flex-col absolute w-full sm:pr-0 sm:w-1/3 2xl:w-1/4 sm:min-w-min h-[100vh] z-30 inset-x-0 text-sm text-ui-fg-base">
+                  <div className="flex flex-col h-full bg-white justify-between p-6">
+                    <div className="flex justify-start" id="xmark">
                       <button onClick={close}>
                         <XMark />
                       </button>
