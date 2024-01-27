@@ -15,6 +15,7 @@ import Spinner from "@modules/common/icons/spinner"
 import PaymentContainer from "@modules/checkout/components/payment-container"
 import { setPaymentMethod } from "@modules/checkout/actions"
 import { paymentInfoMap } from "@lib/constants"
+import Wrapper from "@modules/checkout/components/payment-wrapper"
 
 const Payment = ({
   cart,
@@ -155,17 +156,19 @@ const Payment = ({
                   Enter your card details:
                 </Text>
 
-                <CardElement
-                  options={useOptions as StripeCardElementOptions}
-                  onChange={(e) => {
-                    setCardBrand(
-                      e.brand &&
-                        e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
-                    )
-                    setError(e.error?.message || null)
-                    setCardComplete(e.complete)
-                  }}
-                />
+                <Wrapper cart={cart}>
+                  <CardElement
+                    options={useOptions as StripeCardElementOptions}
+                    onChange={(e) => {
+                      setCardBrand(
+                        e.brand &&
+                          e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
+                      )
+                      setError(e.error?.message || null)
+                      setCardComplete(e.complete)
+                    }}
+                  />
+                </Wrapper>
               </div>
             )}
 
