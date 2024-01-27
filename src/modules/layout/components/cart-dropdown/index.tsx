@@ -94,7 +94,7 @@ const CartDropdown = ({
               />
             </svg>
             {/* Show total items in cart */}
-            {/* {`(${totalItems})`} */}
+            {`(${totalItems})`}
             {/* {`Cart (${totalItems})`} */}
           </LocalizedClientLink>
         </Popover.Button>
