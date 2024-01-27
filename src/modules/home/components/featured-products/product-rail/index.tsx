@@ -26,7 +26,7 @@ export default function ProductRail({
           <Button variant="secondary">View all</Button>
         </InteractiveLink>
       </div>
-      <ul className="flex overflow-auto gap-x-3">
+      <ul className="flex overflow-auto gap-x-[0.6rem]">
         {products &&
           products.map((product) => (
             <li key={product.id} className="flex-none w-40 small:w-52">
