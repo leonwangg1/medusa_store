@@ -99,7 +99,7 @@ export default async function Footer() {
             {productCollections && productCollections.length > 0 && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
-                  Collections
+                  COLLECTIONS
                 </span>
                 <ul
                   className={clx(
@@ -123,37 +123,70 @@ export default async function Footer() {
               </div>
             )}
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">Medusa</span>
+              <span className="txt-small-plus txt-ui-fg-base">
+                CUSTOMER CARE
+              </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
-                  <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
+                  <LocalizedClientLink
+                    href={`/refund`}
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    GitHub
-                  </a>
+                    Refund Policy
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
+                  <LocalizedClientLink
+                    href={`/shipping`}
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Documentation
-                  </a>
+                    Shipping & Returns
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
+                  <LocalizedClientLink
+                    href={`/contact`}
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Source code
-                  </a>
+                    Contact Us
+                  </LocalizedClientLink>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <span className="txt-small-plus txt-ui-fg-base">
+                GET TO KNOW US
+              </span>
+              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
+                <li>
+                  <LocalizedClientLink
+                    href={`/about`}
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    About Us
+                  </LocalizedClientLink>
+                </li>
+                <li>
+                  <LocalizedClientLink
+                    href={`/privacy `}
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Privacy Policy
+                  </LocalizedClientLink>
+                </li>
+                <li>
+                  <LocalizedClientLink
+                    href={`/tos`}
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Terms of Service
+                  </LocalizedClientLink>
                 </li>
               </ul>
             </div>
