@@ -193,7 +193,10 @@ export default async function Footer() {
               </ul>
             </div>
             <div className="flex flex-row gap-x-2 md:col-start-3">
-              <Link href="" target="_blank">
+              <Link
+                href="https://www.instagram.com/mimiblooms.store"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-instagram"
@@ -212,21 +215,10 @@ export default async function Footer() {
                   <path d="M16.5 7.5l0 .01" />
                 </svg>
               </Link>
-              <Link href="" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  className="mt-[3px]"
-                  height="16"
-                  viewBox="0 0 1000 1000"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z"
-                  />
-                </svg>
-              </Link>
-              <Link href="" target="_blank">
+              <Link
+                href="https://www.tiktok.com/@mimiblooms.store"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22px"
@@ -237,6 +229,23 @@ export default async function Footer() {
                   <path
                     fill="currentColor"
                     d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="https://www.facebook.com/mimibloomsstore"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  className="mt-[3px]"
+                  height="16"
+                  viewBox="0 0 1000 1000"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z"
                   />
                 </svg>
               </Link>
