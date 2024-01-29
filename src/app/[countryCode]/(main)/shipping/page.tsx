@@ -2,131 +2,56 @@ import React from "react"
 
 export default function Shipping() {
   return (
-    <div className="my-5 px-10 md:px-80">
-      <span className="text-2xl md:text-3xl font-medium">Privacy Policy</span>
+    <div className="my-5 px-10 md:px-40 lg:px-80">
+      <span className="text-2xl md:text-3xl font-medium">
+        Shipping & Returns
+      </span>
+
+      <p className="mt-5 font-medium">
+        I want to return my purchase! What do I do?
+      </p>
 
       <p className="mt-2">
-        At mimiblooms, accessible from mimiblooms.store/au, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by
-        mimiblooms and how we use it.
+        You can cancel your order up to 24 hours after payment! But if you
+        decide to cancel your order for a few days after payment for any reason,
+        contact us at <a className="underline"> contact.mimiblooms@gmail.com</a>
+        .
       </p>
 
-      <p>
-        If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us.
+      <p className="mt-5 font-medium">
+        How long does it take for me to get a refund?
       </p>
 
-      <p className="mb-5 mt-2">
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in mimiblooms. This policy is not applicable to
-        any information collected offline or via channels other than this
-        website.{" "}
-      </p>
+      <p className="mt-2">Up to 24 hours once we receive your email.</p>
 
-      <span className="text-xl md:text-2xl font-medium">Consent</span>
-
-      <p className="mb-5 mt-2">
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its terms.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Information we collect
-      </span>
-
-      <p>
-        The personal information that you are asked to provide, and the reasons
-        why you are asked to provide it, will be made clear to you at the point
-        we ask you to provide your personal information.
-      </p>
-      <p>
-        If you contact us directly, we may receive additional information about
-        you such as your name, email address, phone number, the contents of the
-        message and/or attachments you may send us, and any other information
-        you may choose to provide.
-      </p>
-      <p className="mb-5 mt-2">
-        When you register for an Account, we may ask for your contact
-        information, including items such as name, company name, address, email
-        address, and telephone number.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        How we use your information
-      </span>
-
-      <p className="mb-5 mt-2">
-        We use the information we collect in various ways, including to:
-      </p>
-
-      <ul className="list-disc pl-10 mb-5">
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-
-      <span className="text-xl md:text-2xl font-medium">Log Files</span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms follows a standard procedure of using log files. These files
-        log visitors when they visit websites. All hosting companies do this and
-        a part of hosting services&apos; analytics. The information collected by
-        log files include internet protocol (IP) addresses, browser type,
-        Internet Service Provider (ISP), date and time stamp, referring/exit
-        pages, and possibly the number of clicks. These are not linked to any
-        information that is personally identifiable. The purpose of the
-        information is for analyzing trends, administering the site, tracking
-        users&apos; movement on the website, and gathering demographic
-        information.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Third Party Privacy Policies
-      </span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms&apos;s Privacy Policy does not apply to other advertisers or
-        websites. Thus, we are advising you to consult the respective Privacy
-        Policies of these third-party ad servers for more detailed information.
-        It may include their practices and instructions about how to opt-out of
-        certain options.{" "}
-      </p>
-
-      <p className="mb-5">
-        You can choose to disable cookies through your individual browser
-        options. To know more detailed information about cookie management with
-        specific web browsers, it can be found at the browsers&apos; respective
-        websites.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Children&apos;s Information
-      </span>
+      <p className="mt-5 font-medium">How Can I Cancel Or Change My Order?</p>
 
       <p className="mt-2">
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
+        If you wish to modify or cancel your order after making a purchase,
+        please email us and we will address your request promptly.
       </p>
 
-      <p className="mt-2 mb-5">
-        mimiblooms does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
+      <p className="mt-5 font-medium">How long is shipping?</p>
+
+      <p className="mt-2">
+        Once payment is received, we will post the product within 1-2 business
+        days from Sydney NSW. Please anticipate a delivery timeframe of{" "}
+        <strong>2-3 weeks</strong> for standard delivery and{" "}
+        <strong>5-10 business days for express delivery </strong>
+        within Australia.
       </p>
+
+      <p className="mt-2">
+        We understand that sometimes you have to wait a little longer to get
+        your order but we promise it&apos;s always worth it! Should you have any
+        inquiries, kindly reach out to us via email at
+        contact.mimiblooms@gmail.com. We appreciate your understanding and
+        patience as we work diligently to fulfill your orders.
+      </p>
+
+      <p className="mt-5 font-medium">Where are you shipping from?</p>
+
+      <p className="mt-2">We are located in Sydney, Australia!</p>
     </div>
   )
 }

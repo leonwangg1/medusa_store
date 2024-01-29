@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Privacy() {
   return (
-    <div className="my-5 px-10 md:px-80">
+    <div className="my-5 px-10 md:px-40 lg:px-96">
       <span className="text-2xl md:text-3xl font-medium">Privacy Policy</span>
 
       <p className="mt-2">
@@ -12,7 +12,7 @@ export default function Privacy() {
         mimiblooms and how we use it.
       </p>
 
-      <p>
+      <p className="mt-2">
         If you have additional questions or require more information about our
         Privacy Policy, do not hesitate to contact us.
       </p>
@@ -36,12 +36,12 @@ export default function Privacy() {
         Information we collect
       </span>
 
-      <p>
+      <p className="mt-2">
         The personal information that you are asked to provide, and the reasons
         why you are asked to provide it, will be made clear to you at the point
         we ask you to provide your personal information.
       </p>
-      <p>
+      <p className="mt-2">
         If you contact us directly, we may receive additional information about
         you such as your name, email address, phone number, the contents of the
         message and/or attachments you may send us, and any other information
@@ -122,10 +122,10 @@ export default function Privacy() {
 
       <p className="mt-2 mb-5">
         mimiblooms does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
+        Information from children. If you think that your child provided this
+        kind of information on our website, we strongly encourage you to contact
+        us immediately and we will do our best efforts to promptly remove such
+        information from our records.
       </p>
     </div>
   )

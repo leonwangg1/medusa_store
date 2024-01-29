@@ -2,130 +2,30 @@ import React from "react"
 
 export default function About() {
   return (
-    <div className="my-5 px-10 md:px-80">
-      <span className="text-2xl md:text-3xl font-medium">Privacy Policy</span>
+    <div className="my-5 px-10 md:px-40 lg:px-80">
+      <span className="text-2xl md:text-3xl font-medium">Abous Us</span>
 
-      <p className="mt-2">
-        At mimiblooms, accessible from mimiblooms.store/au, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by
-        mimiblooms and how we use it.
+      <p className="mt-10 mb-5">
+        We&apos;re not just an ordinary store; we are a destination for
+        unforgettable, high-quality gifts. We specialize in cute preseverd
+        flower figures, plushie bouquets and captivating Sanrio-inspired gifts.
+        Discover the perfect blend of softness and style with our handcrafted
+        arrangements, ideal for every occasion.
       </p>
-
-      <p>
-        If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us.
-      </p>
-
-      <p className="mb-5 mt-2">
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in mimiblooms. This policy is not applicable to
-        any information collected offline or via channels other than this
-        website.{" "}
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">Consent</span>
-
-      <p className="mb-5 mt-2">
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its terms.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Information we collect
-      </span>
-
-      <p>
-        The personal information that you are asked to provide, and the reasons
-        why you are asked to provide it, will be made clear to you at the point
-        we ask you to provide your personal information.
-      </p>
-      <p>
-        If you contact us directly, we may receive additional information about
-        you such as your name, email address, phone number, the contents of the
-        message and/or attachments you may send us, and any other information
-        you may choose to provide.
-      </p>
-      <p className="mb-5 mt-2">
-        When you register for an Account, we may ask for your contact
-        information, including items such as name, company name, address, email
-        address, and telephone number.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        How we use your information
-      </span>
-
-      <p className="mb-5 mt-2">
-        We use the information we collect in various ways, including to:
-      </p>
-
-      <ul className="list-disc pl-10 mb-5">
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-
-      <span className="text-xl md:text-2xl font-medium">Log Files</span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms follows a standard procedure of using log files. These files
-        log visitors when they visit websites. All hosting companies do this and
-        a part of hosting services&apos; analytics. The information collected by
-        log files include internet protocol (IP) addresses, browser type,
-        Internet Service Provider (ISP), date and time stamp, referring/exit
-        pages, and possibly the number of clicks. These are not linked to any
-        information that is personally identifiable. The purpose of the
-        information is for analyzing trends, administering the site, tracking
-        users&apos; movement on the website, and gathering demographic
-        information.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Third Party Privacy Policies
-      </span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms&apos;s Privacy Policy does not apply to other advertisers or
-        websites. Thus, we are advising you to consult the respective Privacy
-        Policies of these third-party ad servers for more detailed information.
-        It may include their practices and instructions about how to opt-out of
-        certain options.{" "}
-      </p>
-
       <p className="mb-5">
-        You can choose to disable cookies through your individual browser
-        options. To know more detailed information about cookie management with
-        specific web browsers, it can be found at the browsers&apos; respective
-        websites.
+        Our products are designed with care, offering a distinctive way to
+        express your feelings. For Sanrio fans, our curated accessories
+        featuring beloved characters add a touch of Kawaii✨ to your daily life.
       </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Children&apos;s Information
-      </span>
-
-      <p className="mt-2">
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
+      <p className="mb-5">
+        Why Mimiblooms? Quality, creativity, and customer satisfaction are at
+        the heart of what we do. We prioritize your experience, ensuring easy
+        browsing, secure shopping, and prompt delivery.
       </p>
-
-      <p className="mt-2 mb-5">
-        mimiblooms does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
+      <p className="mb-10">
+        Explore Mimiblooms for a seamless, delightful shopping experience, and
+        find the perfect gift that&apos;s as special as your loved ones. Shop
+        now and let the charm of products brighten your day!
       </p>
     </div>
   )

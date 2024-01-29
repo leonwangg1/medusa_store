@@ -2,130 +2,66 @@ import React from "react"
 
 export default function Refund() {
   return (
-    <div className="my-5 px-10 md:px-80">
-      <span className="text-2xl md:text-3xl font-medium">Privacy Policy</span>
+    <div className="my-5 px-10 md:px-40 lg:px-96">
+      <span className="text-2xl md:text-3xl font-medium">Refund Policy</span>
 
       <p className="mt-2">
-        At mimiblooms, accessible from mimiblooms.store/au, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by
-        mimiblooms and how we use it.
+        We have a 30-day return policy, which means you have 30 days after
+        receiving your item to request a return.
       </p>
-
-      <p>
-        If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us.
-      </p>
-
-      <p className="mb-5 mt-2">
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in mimiblooms. This policy is not applicable to
-        any information collected offline or via channels other than this
-        website.{" "}
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">Consent</span>
-
-      <p className="mb-5 mt-2">
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its terms.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Information we collect
-      </span>
-
-      <p>
-        The personal information that you are asked to provide, and the reasons
-        why you are asked to provide it, will be made clear to you at the point
-        we ask you to provide your personal information.
-      </p>
-      <p>
-        If you contact us directly, we may receive additional information about
-        you such as your name, email address, phone number, the contents of the
-        message and/or attachments you may send us, and any other information
-        you may choose to provide.
-      </p>
-      <p className="mb-5 mt-2">
-        When you register for an Account, we may ask for your contact
-        information, including items such as name, company name, address, email
-        address, and telephone number.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        How we use your information
-      </span>
-
-      <p className="mb-5 mt-2">
-        We use the information we collect in various ways, including to:
-      </p>
-
-      <ul className="list-disc pl-10 mb-5">
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-
-      <span className="text-xl md:text-2xl font-medium">Log Files</span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms follows a standard procedure of using log files. These files
-        log visitors when they visit websites. All hosting companies do this and
-        a part of hosting services&apos; analytics. The information collected by
-        log files include internet protocol (IP) addresses, browser type,
-        Internet Service Provider (ISP), date and time stamp, referring/exit
-        pages, and possibly the number of clicks. These are not linked to any
-        information that is personally identifiable. The purpose of the
-        information is for analyzing trends, administering the site, tracking
-        users&apos; movement on the website, and gathering demographic
-        information.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Third Party Privacy Policies
-      </span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms&apos;s Privacy Policy does not apply to other advertisers or
-        websites. Thus, we are advising you to consult the respective Privacy
-        Policies of these third-party ad servers for more detailed information.
-        It may include their practices and instructions about how to opt-out of
-        certain options.{" "}
-      </p>
-
-      <p className="mb-5">
-        You can choose to disable cookies through your individual browser
-        options. To know more detailed information about cookie management with
-        specific web browsers, it can be found at the browsers&apos; respective
-        websites.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Children&apos;s Information
-      </span>
 
       <p className="mt-2">
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
+        To be eligible for a return, your item must be in the same condition
+        that you received it, unworn or unused, with tags, and in its original
+        packaging. You’ll also need the receipt or proof of purchase.
       </p>
+
+      <div className="mb-5 mt-2">
+        To start a return, you can contact us at{" "}
+        <a className="underline">contact.mimiblooms@gmail.com</a>.{" "}
+      </div>
+
+      <span className="text-xl md:text-2xl font-medium">
+        Damages and issues
+      </span>
+
+      <p className="mb-5 mt-2">
+        Please inspect your order upon reception and contact us immediately if
+        the item is defective, damaged or if you receive the wrong item, so that
+        we can evaluate the issue and make it right.
+      </p>
+
+      <span className="text-xl md:text-2xl font-medium">
+        Exceptions / non-returnable items
+      </span>
 
       <p className="mt-2 mb-5">
-        mimiblooms does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
+        Certain types of items cannot be returned, like perishable goods (such
+        as food, flowers, or plants), custom products (such as special orders or
+        personalized items), and personal care goods (such as beauty products).
+        We also do not accept returns for hazardous materials, flammable
+        liquids, or gases. Please get in touch if you have questions or concerns
+        about your specific item.
+      </p>
+
+      <span className="text-xl md:text-2xl font-medium">Exchanges</span>
+
+      <p className="mb-5 mt-2">
+        The fastest way to ensure you get what you want is to return the item
+        you have, and once the return is accepted, make a separate purchase for
+        the new item.
+      </p>
+
+      <span className="text-xl md:text-2xl font-medium">Refunds</span>
+
+      <p className="mb-5 mt-2">
+        We will notify you once we’ve received and inspected your return, and
+        let you know if the refund was approved or not. If approved, you’ll be
+        automatically refunded on your original payment method within 10
+        business days. Please remember it can take some time for your bank or
+        credit card company to process and post the refund too. If more than 15
+        business days have passed since we’ve approved your return, please
+        contact us at <a className="underline">contact.mimiblooms@gmail.com</a>.{" "}
       </p>
     </div>
   )

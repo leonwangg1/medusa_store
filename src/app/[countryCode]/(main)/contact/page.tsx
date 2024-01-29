@@ -1,132 +1,111 @@
-import React from "react"
+"use client"
+
+import React, { useState } from "react"
+import { Toaster, useToast } from "@medusajs/ui"
+
+// import axios from "axios" // Make sure to install axios with npm install axios
 
 export default function Contact() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  const { toast } = useToast()
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const formData = {
+      name,
+      email,
+      message,
+    }
+
+    // Replace '/send' with your backend server's URL
+    //     await axios.post("/send", formData)
+  }
+
   return (
-    <div className="my-5 px-10 md:px-80">
-      <span className="text-2xl md:text-3xl font-medium">Privacy Policy</span>
-
-      <p className="mt-2">
-        At mimiblooms, accessible from mimiblooms.store/au, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by
-        mimiblooms and how we use it.
-      </p>
-
-      <p>
-        If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us.
-      </p>
-
-      <p className="mb-5 mt-2">
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in mimiblooms. This policy is not applicable to
-        any information collected offline or via channels other than this
-        website.{" "}
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">Consent</span>
-
-      <p className="mb-5 mt-2">
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its terms.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Information we collect
-      </span>
-
-      <p>
-        The personal information that you are asked to provide, and the reasons
-        why you are asked to provide it, will be made clear to you at the point
-        we ask you to provide your personal information.
-      </p>
-      <p>
-        If you contact us directly, we may receive additional information about
-        you such as your name, email address, phone number, the contents of the
-        message and/or attachments you may send us, and any other information
-        you may choose to provide.
-      </p>
-      <p className="mb-5 mt-2">
-        When you register for an Account, we may ask for your contact
-        information, including items such as name, company name, address, email
-        address, and telephone number.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        How we use your information
-      </span>
-
-      <p className="mb-5 mt-2">
-        We use the information we collect in various ways, including to:
-      </p>
-
-      <ul className="list-disc pl-10 mb-5">
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-
-      <span className="text-xl md:text-2xl font-medium">Log Files</span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms follows a standard procedure of using log files. These files
-        log visitors when they visit websites. All hosting companies do this and
-        a part of hosting services&apos; analytics. The information collected by
-        log files include internet protocol (IP) addresses, browser type,
-        Internet Service Provider (ISP), date and time stamp, referring/exit
-        pages, and possibly the number of clicks. These are not linked to any
-        information that is personally identifiable. The purpose of the
-        information is for analyzing trends, administering the site, tracking
-        users&apos; movement on the website, and gathering demographic
-        information.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Third Party Privacy Policies
-      </span>
-
-      <p className="mb-5 mt-2">
-        mimiblooms&apos;s Privacy Policy does not apply to other advertisers or
-        websites. Thus, we are advising you to consult the respective Privacy
-        Policies of these third-party ad servers for more detailed information.
-        It may include their practices and instructions about how to opt-out of
-        certain options.{" "}
-      </p>
-
-      <p className="mb-5">
-        You can choose to disable cookies through your individual browser
-        options. To know more detailed information about cookie management with
-        specific web browsers, it can be found at the browsers&apos; respective
-        websites.
-      </p>
-
-      <span className="text-xl md:text-2xl font-medium">
-        Children&apos;s Information
-      </span>
-
-      <p className="mt-2">
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
-      </p>
-
-      <p className="mt-2 mb-5">
-        mimiblooms does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
-      </p>
-    </div>
+    <section className="text-gray-600 body-font relative">
+      <Toaster />
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            Contact Us
+          </h1>
+        </div>
+        <form onSubmit={onSubmit}>
+          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="name"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="email"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label
+                    htmlFor="message"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <button
+                  type="submit"
+                  className="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-900 rounded text-lg"
+                  onClick={() =>
+                    toast({
+                      variant: "success",
+                      title: "Email sent",
+                      description: "Thanks for the email",
+                    })
+                  }
+                >
+                  <a href="">Send</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   )
 }
