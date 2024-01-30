@@ -156,7 +156,7 @@ const Payment = ({
                   Enter your card details:
                 </Text>
 
-                <CardElement
+                {/* <CardElement
                   options={useOptions as StripeCardElementOptions}
                   onChange={(e) => {
                     setCardBrand(
@@ -166,7 +166,7 @@ const Payment = ({
                     setError(e.error?.message || null)
                     setCardComplete(e.complete)
                   }}
-                />
+                /> */}
               </div>
             )}
 
