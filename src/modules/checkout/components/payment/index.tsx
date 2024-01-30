@@ -156,19 +156,17 @@ const Payment = ({
                   Enter your card details:
                 </Text>
 
-                <Wrapper cart={cart}>
-                  <CardElement
-                    options={useOptions as StripeCardElementOptions}
-                    onChange={(e) => {
-                      setCardBrand(
-                        e.brand &&
-                          e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
-                      )
-                      setError(e.error?.message || null)
-                      setCardComplete(e.complete)
-                    }}
-                  />
-                </Wrapper>
+                <CardElement
+                  options={useOptions as StripeCardElementOptions}
+                  onChange={(e) => {
+                    setCardBrand(
+                      e.brand &&
+                        e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
+                    )
+                    setError(e.error?.message || null)
+                    setCardComplete(e.complete)
+                  }}
+                />
               </div>
             )}
 
