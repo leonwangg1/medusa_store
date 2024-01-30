@@ -16,10 +16,6 @@ import PaymentContainer from "@modules/checkout/components/payment-container"
 import { setPaymentMethod } from "@modules/checkout/actions"
 import { paymentInfoMap } from "@lib/constants"
 import Wrapper from "@modules/checkout/components/payment-wrapper"
-import { loadStripe } from "@stripe/stripe-js"
-
-const stripeKey = process.env.NEXT_PUBLIC_STRIPE_KEY
-const stripePromise = stripeKey ? loadStripe(stripeKey) : null
 
 const Payment = ({
   cart,
@@ -160,19 +156,17 @@ const Payment = ({
                   Enter your card details:
                 </Text>
 
-                <Elements stripe={stripePromise}>
-                  <CardElement
-                    options={useOptions as StripeCardElementOptions}
-                    onChange={(e) => {
-                      setCardBrand(
-                        e.brand &&
-                          e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
-                      )
-                      setError(e.error?.message || null)
-                      setCardComplete(e.complete)
-                    }}
-                  />
-                </Elements>
+                <CardElement
+                  options={useOptions as StripeCardElementOptions}
+                  onChange={(e) => {
+                    setCardBrand(
+                      e.brand &&
+                        e.brand.charAt(0).toUpperCase() + e.brand.slice(1)
+                    )
+                    setError(e.error?.message || null)
+                    setCardComplete(e.complete)
+                  }}
+                />
               </div>
             )}
 
