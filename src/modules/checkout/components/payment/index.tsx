@@ -7,7 +7,7 @@ import ErrorMessage from "@modules/checkout/components/error-message"
 import { Cart } from "@medusajs/medusa"
 import { CheckCircleSolid, CreditCard } from "@medusajs/icons"
 import { Button, Container, Heading, Text, Tooltip, clx } from "@medusajs/ui"
-import { CardElement, Elements } from "@stripe/react-stripe-js"
+import { CardElement } from "@stripe/react-stripe-js"
 import { StripeCardElementOptions } from "@stripe/stripe-js"
 
 import Divider from "@modules/common/components/divider"
@@ -15,7 +15,6 @@ import Spinner from "@modules/common/icons/spinner"
 import PaymentContainer from "@modules/checkout/components/payment-container"
 import { setPaymentMethod } from "@modules/checkout/actions"
 import { paymentInfoMap } from "@lib/constants"
-import Wrapper from "@modules/checkout/components/payment-wrapper"
 
 const Payment = ({
   cart,
@@ -156,7 +155,7 @@ const Payment = ({
                   Enter your card details:
                 </Text>
 
-                {/* <CardElement
+                <CardElement
                   options={useOptions as StripeCardElementOptions}
                   onChange={(e) => {
                     setCardBrand(
@@ -166,7 +165,7 @@ const Payment = ({
                     setError(e.error?.message || null)
                     setCardComplete(e.complete)
                   }}
-                /> */}
+                />
               </div>
             )}
 

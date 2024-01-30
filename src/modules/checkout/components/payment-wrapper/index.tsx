@@ -52,7 +52,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     )
   }
 
-  return <div>{children}</div>
+  return { children }
 }
 
 export default Wrapper
