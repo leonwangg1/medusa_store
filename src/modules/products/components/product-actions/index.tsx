@@ -158,7 +158,8 @@ export default function ProductActions({
             ? "Out of stock"
             : "Add to cart"}
         </Button>
-        <MobileActions
+        {/* Disabled the scroll up to show MobileActions at bottom */}
+        {/* <MobileActions
           product={product}
           variant={variant}
           region={region}
@@ -168,7 +169,7 @@ export default function ProductActions({
           handleAddToCart={handleAddToCart}
           isAdding={isAdding}
           show={!inView}
-        />
+        /> */}
       </div>
     </>
   )
