@@ -158,7 +158,7 @@ export async function createPaymentSessions(cartId: string) {
     .createPaymentSessions(cartId, headers)
     .then(({ cart }) => cart)
     .catch((err) => {
-      console.log(err)
+      console.log("fuck")
       return null
     })
 }
