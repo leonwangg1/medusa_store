@@ -22,6 +22,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
   const isStripe = paymentSession?.provider_id?.includes("stripe")
 
   if (isStripe && paymentSession && stripePromise) {
+    console.log("Rendering StripeWrapper")
     return (
       <StripeWrapper
         paymentSession={paymentSession}
@@ -38,6 +39,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     paypalClientId !== undefined &&
     cart
   ) {
+    console.log("Rendering PayPalScriptProvider")
     return (
       <PayPalScriptProvider
         options={{
@@ -52,6 +54,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     )
   }
 
+  console.log("Rendering Else")
   return <div>{children}</div>
 }
 
