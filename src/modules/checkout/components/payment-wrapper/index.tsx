@@ -26,8 +26,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
   }, [cart.payment_session])
 
   if (!paymentSession) {
-    window.location.reload()
-    return
+    return <div>{children}</div>
   }
 
   const isStripe = paymentSession.provider_id.includes("stripe")
