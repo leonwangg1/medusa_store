@@ -16,18 +16,26 @@ type WrapperProps = {
 }
 
 const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
-  const paymentSession = cart.payment_session as PaymentSession
-  const isStripe = paymentSession?.provider_id?.includes("stripe")
+  const [paymentSession, setPaymentSession] = useState<PaymentSession | null>(
+    cart.payment_session
+  )
 
-  console.log("cart:", cart)
-  console.log("paymentSession:", paymentSession)
-  console.log("isStripe:", isStripe)
+  useEffect(() => {
+    // Update paymentSession state when cart.payment_session changes
+    setPaymentSession(cart.payment_session)
+  }, [cart.payment_session])
 
-  if (!cart.payment_session) {
+  if (!paymentSession) {
     window.location.reload()
+    return
   }
 
-  if (isStripe && paymentSession && stripePromise) {
+  const isStripe = paymentSession.provider_id.includes("stripe")
+
+  console.log("paymentSession:", paymentSession)
+  console.log("stripePromise:", stripePromise)
+
+  if (isStripe && stripePromise) {
     console.log("Rendering StripeWrapper")
     return (
       <StripeWrapper
