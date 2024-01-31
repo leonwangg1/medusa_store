@@ -23,7 +23,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
   console.log("paymentSession:", cart.payment_session)
   console.log("isStripe:", isStripe)
 
-  if (stripePromise) {
+  if (isStripe && paymentSession && stripePromise) {
     console.log("Rendering StripeWrapper")
     return (
       <StripeWrapper
