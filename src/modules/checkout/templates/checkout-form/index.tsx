@@ -41,6 +41,10 @@ export default async function CheckoutForm() {
   // get customer if logged in
   const customer = await getCustomer()
 
+  if (!cart || cart.payment_session === null) {
+    return <div>Payment session is not available.</div>
+  }
+
   return (
     <div>
       <div className="w-full grid grid-cols-1 gap-y-8">
