@@ -23,18 +23,18 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
   console.log("paymentSession:", cart.payment_session)
   console.log("isStripe:", isStripe)
 
-  // if (isStripe && paymentSession && stripePromise) {
-  console.log("Rendering StripeWrapper")
-  return (
-    <StripeWrapper
-      paymentSession={paymentSession}
-      stripeKey={stripeKey}
-      stripePromise={stripePromise}
-    >
-      {children}
-    </StripeWrapper>
-  )
-  // }
+  if (isStripe && paymentSession && stripePromise) {
+    console.log("Rendering StripeWrapper")
+    return (
+      <StripeWrapper
+        paymentSession={paymentSession}
+        stripeKey={stripeKey}
+        stripePromise={stripePromise}
+      >
+        {children}
+      </StripeWrapper>
+    )
+  }
 
   if (
     paymentSession?.provider_id === "paypal" &&
@@ -56,8 +56,8 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     )
   }
 
-  // console.log("Rendering Else")
-  // return <div>{children}</div>
+  console.log("Rendering Else")
+  return <div>{children}</div>
 }
 
 export default Wrapper
