@@ -25,12 +25,6 @@ const Summary = ({ cart }: SummaryProps) => {
       <LocalizedClientLink href={"/checkout?step=" + cart.checkout_step}>
         <Button className="w-full h-10">Go to checkout</Button>
       </LocalizedClientLink>
-      <Link href={`/checkout?step=${cart.checkout_step}`}>
-        <Button className="w-full h-10">Go to checkout</Button>
-      </Link>
-      <a href={`/checkout?step=${cart.checkout_step}`} target="_blank">
-        <Button className="w-full h-10">Go to checkout</Button>
-      </a>
     </div>
   )
 }
