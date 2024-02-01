@@ -1,5 +1,3 @@
-"use client"
-
 import { Cart, PaymentSession } from "@medusajs/medusa"
 import { loadStripe } from "@stripe/stripe-js"
 import React, { useState, useEffect } from "react"
@@ -16,18 +14,21 @@ type WrapperProps = {
 }
 
 const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
-  const paymentSession = cart.payment_session as PaymentSession
-  const isStripe = paymentSession?.provider_id?.includes("stripe")
+  const [providerId, setProviderId] = useState<string | null>(null)
+  const isStripe = providerId?.includes("stripe")
 
-  console.log("cart:", cart)
-  console.log("paymentSession:", cart.payment_session)
-  console.log("isStripe:", isStripe)
+  useEffect(() => {
+    const paymentSession = cart.payment_session as PaymentSession
 
-  if (isStripe && paymentSession && stripePromise) {
-    console.log("Rendering StripeWrapper")
+    setProviderId(paymentSession?.provider_id)
+  }, [])
+
+  if (!providerId) return null
+
+  if (isStripe && providerId && stripePromise) {
     return (
       <StripeWrapper
-        paymentSession={paymentSession}
+        paymentSession={cart.payment_session!}
         stripeKey={stripeKey}
         stripePromise={stripePromise}
       >
@@ -36,12 +37,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     )
   }
 
-  if (
-    paymentSession?.provider_id === "paypal" &&
-    paypalClientId !== undefined &&
-    cart
-  ) {
-    console.log("Rendering PayPalScriptProvider")
+  if (providerId === "paypal" && paypalClientId !== undefined && cart) {
     return (
       <PayPalScriptProvider
         options={{
@@ -56,7 +52,6 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     )
   }
 
-  console.log("Rendering Else")
   return <div>{children}</div>
 }
 
