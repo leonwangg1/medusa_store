@@ -1,3 +1,5 @@
+"use client"
+
 import { Cart, PaymentSession } from "@medusajs/medusa"
 import { loadStripe } from "@stripe/stripe-js"
 import React, { useState, useEffect } from "react"
