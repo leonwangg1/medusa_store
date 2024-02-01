@@ -23,7 +23,7 @@ const Wrapper: React.FC<WrapperProps> = ({ cart, children }) => {
     const paymentSession = cart.payment_session as PaymentSession
 
     setProviderId(paymentSession?.provider_id)
-  }, [cart.payment_session])
+  }, [])
 
   if (!providerId) return null
 
